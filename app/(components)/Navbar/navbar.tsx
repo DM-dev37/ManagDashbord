@@ -43,7 +43,7 @@ export default function Navbar() {
           </div>
           <hr className="w-0 h-7 border-l-2 border-gray-500 mx-3" />
           <div className="flex items-center gap-3 cursor-pointer">
-            <div className="w-9 h-9">image</div>
+            <div className="w-9 h-9 bg-gray-500 ring hover:ring-blue-400 rounded-full"></div>
             <span className="font-semibold">DM.dev</span>
           </div>
         </div>
