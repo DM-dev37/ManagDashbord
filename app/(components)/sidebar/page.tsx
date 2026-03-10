@@ -5,7 +5,7 @@ import React from "react";
 
 export default function SideBar() {
   return (
-    <div className="px-4 border-gray-600 border h-screen">
+    <div className="px-4 ">
       {/* top logo */}
       <div className="flex gap-4 justify-between md:justify-normal items-center pt-8">
         <h1 className="text-sm font-semibold pt-2">
@@ -21,7 +21,7 @@ export default function SideBar() {
       </div>
 
       {/* link */}
-      <div className="flex flex-1 mt-8"></div>
+      <div className="flex flex-1 mt-8">mes liens arrivent...</div>
 
       {/* footer */}
       <div>
