@@ -1,6 +1,7 @@
-import {config} from 'tailwindcss'
+import {Config} from 'tailwindcss'
 import {createThemes} from 'tw-colors'
 import colors from 'tailwindcss/colors'
+import { Fascinate } from 'next/font/google';
 
 
 
@@ -55,6 +56,26 @@ const themes = {
         black: colors.gray["50"]
     }
 } 
+
+const config: Config = {
+  darkMode: "class",
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+    },
+  },
+  plugins: [createThemes(themes)],
+};
+
 
 
 
