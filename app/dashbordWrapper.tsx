@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./(components)/Navbar/navbar";
+import SideBar from "./(components)/sidebar/page";
 
 export default function DashbordWrapper({
   children,
@@ -8,7 +9,7 @@ export default function DashbordWrapper({
 }) {
   return (
     <div className={`light flex w-full min-h-screen, bg-gray-50 text-gray-900`}>
-      siedebar
+      <SideBar />
       <main
         className={`flex flex-col py-7 px-9 w-full h-full bg-gray-50 md:pl-24:`}
       >
